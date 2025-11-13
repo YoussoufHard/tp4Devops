@@ -38,7 +38,7 @@ pipeline {
                 echo "=== Deploying Docker Container ==="
                 bat """
                     docker rm -f tp4devops || echo Container not found
-                    docker run -d --name tp4devops -p 8080:80 youssouftangara/tp4devops:latest
+                    docker run -d --name tp4devops -p 8082:80 youssouftangara/tp4devops:latest
                 """
             }
         }
